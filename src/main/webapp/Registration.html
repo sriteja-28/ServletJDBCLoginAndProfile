@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        font-size: 14px;
+    }
+    caption {
+        font-size: 18px;
+        font-weight: bold;
+        color: blue;
+        margin-bottom: 10px;
+    }
+    input[type="reset"]:hover {
+        color: yellow;
+        background-color: black;
+        border: 2px solid yellow;
+        transition: all 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        color: green;
+        background-color: black;
+        border: 2px solid green;
+        transition: all 0.3s ease;
+    }
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+</style>
+</head>
+<body>
+<div class="container mt-5">
+    <form action="register" method="post">
+        <div class="card shadow p-4">
+            <h2 class="text-center text-primary mb-4">Student Registration Details</h2>
+            <div class="row mb-3">
+                <label for="studentId" class="col-sm-4 col-form-label text-end">Student Id</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="studentId" name="studentId" autofocus>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="studentName" class="col-sm-4 col-form-label text-end">Student Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="studentName" name="studentName">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="userName" class="col-sm-4 col-form-label text-end">User Name</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="userName" name="userName">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="password" class="col-sm-4 col-form-label text-end">Password</label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" id="password" name="password">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="emailId" class="col-sm-4 col-form-label text-end">Email Id</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" id="emailId" name="emailId">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="mobileNo" class="col-sm-4 col-form-label text-end">Mobile No</label>
+                <div class="col-sm-8">
+                    <input type="text" class="form-control" id="mobileNo" name="mobileNo">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label text-end">Gender</label>
+                <div class="col-sm-8">
+                    <div>
+                        <input type="radio" id="male" name="gender" value="Male"> <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female"> <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label class="col-sm-4 col-form-label text-end">Languages Known</label>
+                <div class="col-sm-8">
+                    <div>
+                        <input type="checkbox" id="english" name="languages" value="English"> <label for="english">English</label>
+                        <input type="checkbox" id="telugu" name="languages" value="Telugu"> <label for="telugu">Telugu</label>
+                        <input type="checkbox" id="hindi" name="languages" value="Hindi"> <label for="hindi">Hindi</label>
+                        <input type="checkbox" id="tamil" name="languages" value="Tamil"> <label for="tamil">Tamil</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="qualification" class="col-sm-4 col-form-label text-end">Qualification</label>
+                <div class="col-sm-8">
+                    <select id="qualification" name="qualification" class="form-select">
+                        <option>--select--</option>
+                        <option>Pd.D</option>
+                        <option>Graduate</option>
+                        <option>Post Graduate</option>
+                        <option>Intermediate</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="comments" class="col-sm-4 col-form-label text-end">Comments</label>
+                <div class="col-sm-8">
+                    <textarea id="comments" rows="3" class="form-control" name="comments" placeholder="Enter your comments here"></textarea>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center gap-4">
+                <button type="reset" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+            <div class="text-center mt-3">
+                <a href="Login.html">Already User?</a>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+<!--  
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registeration Form</title>
+<style>
+table, th, tr, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	/* background-color: lightblue; */
+}
+
+th {
+	background-color: lightblue;
+}
+
+caption {
+	font-size: 30px;
+	font-weight: bold;
+	color: blue;
+	margin-bottom: 10px;
+}
+
+input[type="reset"]:hover {
+	color: yellow;
+	background-color: black;
+	border: 2px solid yellow;
+	transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	color: green;
+	background-color: black;
+	border: 2px solid green;
+	transition: all 0.3s ease;
+}
+
+a[href="Login.html"] {
+	text-decoration: none;
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<form action="register" method="post">
+		<table align="center">
+			<caption>Student Registration Details</caption>
+			<tr>
+				<th>Student Id</th>
+				<td><input type="text" name="studentId" autofocus="autofocus" /></td>
+			</tr>
+			<tr>
+				<th>Student Name</th>
+				<td><input type="text" name="studentName" /></td>
+			</tr>
+			<tr>
+				<th>User Name</th>
+				<td><input type="text" name="userName" /></td>
+			</tr>
+			<tr>
+				<th>Password</th>
+				<td><input type="text" name="password" /></td>
+			</tr>
+			<tr>
+				<th>Eamil Id</th>
+				<td><input type="email" name="emailId" /></td>
+			</tr>
+			<tr>
+				<th>Mobile No</th>
+				<td><input type="text" name="mobileNo" /></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td><input type="radio" name="gender"  value="Male"/>Male <input
+					type="radio" name="gender" value="Female"/>Female</td>
+			</tr>
+			<tr>
+				<th>Languages Known</th>
+				<td><input type="checkbox" name="languages" value="English" />English<input
+					type="checkbox" name="languages" value="Telugu"/>Telugu<br /> <input
+					type="checkbox" name="languages" value="Hindi" />Hindi <input type="checkbox"
+					name="languages" value="Tamil"/>Tamil</td>
+			</tr>
+			<tr>
+				<th>Qualification</th>
+				<td><select name="qualification">
+						<option>--select--</option>
+						<option>Pd.D</option>
+						<option>Graduate</option>
+						<option>Post Graduate</option>
+						<option>Intermediate</option>
+				</select></td>
+
+			</tr>
+			<tr>
+				<th>Comments</th>
+				<td><textarea rows="5" cols="50" name="comments"
+						placeholder="Enter your comments here"></textarea></td>
+			</tr>
+			<tr>
+				<td><input type="reset" value="Reset" /></td>
+				<td align="right"><input type="submit" value="Register" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><a href="Login.html">
+						Already User?</a></td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>
+-->
